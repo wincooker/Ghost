@@ -1,0 +1,513 @@
+/* 
+ * Theme Name: Mantanization
+ * Author: id-webmaster
+ * Code: style.css
+ * Description: Main CSS file of Mantanization Theme
+ * 
+ */
+
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+/*
+    1.  General
+    2.  Theme CSS
+    3.  Media Queries
+*/
+ 
+
+/* ==========================================================================
+   1. General - Setting up some base styles
+   ========================================================================== */
+body {
+    background-color:#f4f4f4;
+    background-image: url('../img/bg_default.jpg');
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ==========================================================================
+   2. Theme CSS - Private CSS
+   ========================================================================== */
+
+/* ====== Mantanization Wrapper ====== */
+#mantanization-wrapper{
+    background: #3a3a3a;
+    height: 500px;
+    padding: 38px 0px 0px;
+}
+
+#mantanization-wrapper .container{
+    width: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* ====== Mantanization Wrapper ====== */
+
+
+/* ====== Mantanization Body ====== */
+#mantanization-body{
+    color: #fff;
+}
+
+#mantanization-body [class*='col-md']{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#mantanization-body .col-md-4{
+    padding-right: 35px;
+}
+
+/* ====== Mantanization Body ====== */
+
+
+/* === Mantanization Widget Site === */
+#mantanization-widget-site{
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+#mantanization-widget-site-image{
+    background: #fff;
+    background-size: cover;
+    background-position: 50% 0px;
+    background-repeat: initial;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.mantanization-cover-figure{
+    margin:0 auto;
+    display: table;
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.mantanization-cover-img{
+    display: block;
+    width: 92px;
+    height: 90px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+#mantanization-widget-site-title{
+    padding: 10px;
+    text-align: center;
+}
+
+#mantanization-widget-site-title h1{
+    margin: 0px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+#mantanization-widget-site-description{
+    padding: 15px 10px 19px;
+    text-align: center;
+    font-size: 15px;
+}
+/* ====== Mantanization Widget Site ====== */
+
+
+/* ====== Mantanization Footer ====== */
+#mantanization-footer {
+    background: #373737;
+    color: #fff;
+    padding: 34px 0px 50px;
+    margin-top: 20px;
+}
+
+#mantanization-footer .col-md-4{
+    padding-left: 0;
+    padding-right:40px;
+}
+
+.mantanization-footer-title {
+    border-bottom: 2px solid #303030;
+}
+
+.mantanization-footer-title .title-block {
+    display: inline-block;
+    margin-bottom: -2px;
+    padding-bottom: 11px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.mantanization-footer-content {
+    border-top: 1px solid #424242;
+    padding-top: 18px;
+    color: #b6b6b6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia ul{
+    margin: 6px 0px 0px;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia ul li a i{
+    background: #505050;
+}
+
+.mantanization-footer-content form{
+    margin-top:12px;
+}
+
+.form-control{
+    height: 34px;
+}
+
+.mantanization-footer-content input[type='text'],
+.mantanization-footer-content input[type='email']{
+    border:0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.mantanization-footer-content .btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0px;
+    padding: 6px 16px 7px;
+    background: #6fb24b;
+    color: #fff;
+    font-size: 15px;
+    transition: ease 0.3s;
+}
+
+.mantanization-footer-content .btn:hover{
+    background:#505050;
+}
+
+
+#mantanization-copyright{
+    background:#454545;
+    font-size:13px;
+    padding:14px 0px;
+    text-align:center;
+    color:#bbbbbb;
+}
+
+#mantanization-copyright a{
+    color: #d5d5d5;
+}
+
+#mantanization-copyright a:hover{
+    color: #fff;
+}
+
+#mantanization-copyright .col-md-12{
+    padding-left:0;
+    padding-right:0;
+}
+/* ====== Mantanization Footer ====== */
+
+
+
+/* ==========================================================================
+   3. Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {   
+    #mantanization-wrapper{
+        padding:30px 0px 0px;
+    }
+    
+    #mantanization-body .col-md-4{
+        padding-left:15px;
+    }
+    
+    #mantanization-body .col-md-8{
+        padding-right:15px;
+    }
+    
+    .mantanizaation-widget-recent-posts-text {
+        width: 150px !important;
+    }
+    
+    ul#flickr li {
+        width: 56px !important;
+        height: 56px !important;
+    }
+    
+    .mantanization-widget-menu-content iframe {
+        width: 246px !important;
+    }
+    
+    .mantanization-widget-socialmedia ul li {
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 6px;
+        width: 36px !important;
+    }
+    
+    #mantanization-footer .col-md-4 {
+        padding-left: 16px;
+    }
+    
+    #mantanization-copyright [class*='col-md']{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    
+    .g-page{
+        width:246px;
+    }
+    
+    .g-page-wrapper iframe{
+        width:246px !important;
+        border-right:1px solid #ccc;
+        border-style:solid !important;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    #mantanization-wrapper{
+        height: 470px;
+    }
+    
+    #mantanization-wrapper .container{
+        width:auto !important;
+        max-width:auto !important;
+    }
+    
+    #mantanization-wrapper{
+        padding:20px 0px 0px;
+    }
+    
+     #mantanization-body .col-md-4{
+        padding-left:20px;
+        padding-right:20px;
+        float:none;
+        width:100%;
+    }
+    
+    #mantanization-body .col-md-8{
+        padding-left:20px;
+        padding-right:20px;
+        float:none;
+        width:100%;
+    }
+    
+    #mantanization-widget-site-description {
+        padding: 14px 10px 19px;
+    }
+    
+    #mantanization-widget-site,
+    .mantanization-widget-menu,
+    .mantanization-post{
+        margin-bottom: 30px !important;
+    }
+    
+    .mantanization-post-detail{
+        margin-bottom: 32px !important;
+    }
+    
+    .mantanization-disqus{
+        margin-top:32px !important;
+    }
+    
+    #mantanization-widget-recent-posts-wrapper {
+        margin-top: 0px;
+    }
+    .mantanizaation-widget-recent-posts-text {
+        width: 79% !important;
+    }
+    
+    .mantanization-widget-recent-posts {
+        margin-bottom: 20px;
+    }
+    
+    .mantanization-widget-menu-content iframe {
+        width:100% !important;
+    }
+    
+    #mantanization-footer .col-md-4 {
+        padding-left: 20px;
+        float:none;
+        width:100%;
+    }
+    
+    .mantanization-footer-content{
+        margin-bottom:21px;
+    }
+    
+    #mantanization-copyright{
+        margin-top:-30px;
+    }
+    
+    #mantanization-copyright [class*='col-md']{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    
+    #mantanization-pagination{
+        text-align:left !important;
+    }
+    
+    #___page_0,
+    #___person_0{
+        display: block !important;
+        margin: auto !important;
+    }
+    
+    .g-page-wrapper{
+        margin-bottom:5px;
+    }
+    
+    .g-page,
+    .g-page-wrapper iframe{
+        width:100% !important;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .mantanization-post-detail-author-left.left,
+    .mantanization-post-detail-author-right.left{
+        float:none;
+    }
+    
+    .mantanization-post-detail-author-right.left{
+        width:auto !important;
+    }
+    
+    .mantanization-post-detail-author-left.left{
+        margin-bottom:10px;
+    }
+    
+    .author-info{
+        padding:0px !important;
+        border:1px solid #eaeaea !important;
+        border-top:0px !important;
+    }
+    
+    .author-info ul li{
+        display:block !important;
+        padding:6px 0px;
+        border-top:1px solid #eaeaea;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+    #mantanization-pagination .pagination{
+        margin-bottom:20px;
+    }
+    
+    .newer-posts{
+        margin-right:3px;
+    }
+    
+    .older-posts{
+        margin-left:3px;
+    }
+    
+    .mantanization-footer-content .btn {
+        padding: 6px 10px 7px;
+        background: #6fb24b;
+    }
+    
+    .mantanization-widget-recent-posts-image.left{
+        float:none;
+        margin-bottom:11px;
+    }
+    
+    .mantanization-widget-recent-posts-text.left{
+        float:none;
+    }
+    
+    #mantanization-pagination .pagination{
+        text-align:center;
+        margin-bottom:12px !important;
+    }
+    
+    #mantanization-pagination .pagination span,
+    #mantanization-pagination .pagination a{
+        display:block;
+    }
+    
+    .newer-posts{
+        margin-right:0px !important;
+    }
+    
+    .older-posts{
+        margin-left:0px !important;
+    }
+    
+    #mantanization-pagination .pagination span{
+        margin:6px 0px;
+    }
+    
+    .author-info-content.left{
+        float:none;
+        margin-top: 1px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #mantanization-wrapper{
+        padding:10px 0px 0px;
+    }
+    
+     #mantanization-body .col-md-4{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
+    #mantanization-body .col-md-8{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
+    #mantanization-footer{
+        padding-top:25px;
+    }
+    
+    #mantanization-footer .col-md-4 {
+        padding-left: 15px;
+    }
+    
+    #mantanization-copyright [class*='col-md']{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    
+    #mantanization-widget-site,
+    .mantanization-widget-menu{
+        margin-bottom: 21px !important;
+    }
+    
+    .mantanization-post{
+        margin-bottom: 20px !important;
+    }
+    
+    .mantanization-post-detail{
+        margin-bottom: 23px !important;
+    }
+    
+    .mantanization-disqus{
+        margin-top:23px !important;
+    }
+    
+    .author-info ul{
+        text-align:left !important;
+    }
+    
+    .author-info ul li{
+        padding-left:21px !important;
+        padding-right:21px !important;
+    }
+}

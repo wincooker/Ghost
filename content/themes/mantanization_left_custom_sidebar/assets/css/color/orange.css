@@ -1,0 +1,124 @@
+::-moz-selection {
+    color: #FFF;
+    background: #FF9B74;
+    text-shadow: none;
+}
+
+::selection {
+    color: #FFF;
+    background: #FF9B74;
+    text-shadow: none;
+}
+
+ins{
+    color: #FFF;
+    background: #FF9B74;
+    text-decoration:none;
+}
+
+/* === WIDGET === */
+#mantanization-widget-site-title{
+    background-image: none;
+    background-color:#fff;
+}
+
+#mantanization-widget-site-title a{
+    color: #536458;
+}
+
+#mantanization-widget-site-title a:hover{
+    color: #ccc;
+}
+
+#mantanization-widget-site-description{
+    background: #E4815B url('../../img/img_bg_ribbon_shadow.png') no-repeat
+}
+
+.mantanization-widget-menu-custom-title .title-block{
+    border-bottom: 2px solid #F88F6E;
+}
+
+.mantanization-widget-menu-custom {
+    border-bottom:3px solid #F88F6E;
+}
+
+.mantanization-widget-menu-custom-content a,
+.extra-widget a {
+    color: #9E5216;
+}
+
+.mantanization-widget-menu-custom-content a:hover,
+.extra-widget a:hover{
+    color: #ccc;
+}
+
+.mantanizaation-widget-recent-posts-text a {
+    color: #313131;
+}
+/* === WIDGET === */
+
+
+/* === FOOTER === */
+.mantanization-footer-title .title-block{
+    border-bottom: 3px solid #E4875B;
+}
+
+.mantanization-footer-content .btn{
+    background: #E4875B
+}
+
+.mantanization-footer-content .btn:hover{
+    background:#505050;
+}
+/* === FOOTER === */
+
+
+/* === POST === */
+.mantanization-post-title h2 a {
+    color: #4E4E4E
+}
+
+.mantanization-post-title h2 a:hover{
+    color: #CA7B5C
+}
+
+.featured .ribbon,
+.mantanization-post-bottom a {
+    background: #F88F6E
+}
+
+.mantanization-post-bottom {
+    border-bottom: 4px solid #F88F6E;
+}
+
+.img-hover-content a{
+    border: 2px solid #E78058;
+    background: #E78058;
+}
+
+.img-hover-content a:hover{
+    background:#4D4D4D;
+    border: 2px solid #4D4D4D;
+}
+
+#mantanization-pagination .pagination a:hover{
+    background: #F17D60;
+    border: 1px solid #F17D60;
+    border-bottom: 2px solid #F17D60;
+}
+
+blockquote {
+    border-left: #F5B39E 5px solid;
+}
+
+.author-info a,
+.mantanization-post-detail-body a {
+    color: #B15233;
+}
+/* === POST === */
+
+@media only screen and (max-width: 990px) {
+    #mantanization-widget-site-description {
+        background-image:none;
+    }
+}

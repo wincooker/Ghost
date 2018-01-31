@@ -1,0 +1,145 @@
+::-moz-selection {
+    color: #3D3D3D;
+    background: #FFFFA5;
+    text-shadow: none;
+}
+
+::selection {
+    color: #3D3D3D;
+    background: #FFFFA5;
+    text-shadow: none;
+}
+
+ins{
+    color: #3D3D3D;
+    background: #FFFFA5;
+    text-decoration:none;
+}
+
+/* === WIDGET === */
+#mantanization-widget-site-title{
+    background-image: none;
+    background-color:#fff;
+}
+
+#mantanization-widget-site-title a{
+    color: #536458;
+}
+
+#mantanization-widget-site-title a:hover{
+    color: #ccc;
+}
+
+#mantanization-widget-site-description{
+    background: #F6E278 url('../../img/img_bg_ribbon_shadow.png') no-repeat;
+    color: #2E2E2E;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.mantanization-widget-menu-custom-title .title-block{
+    border-bottom: 2px solid #ffb566;
+}
+
+.mantanization-widget-menu-custom {
+    border-bottom:3px solid #ffb566;
+}
+
+.mantanization-widget-menu-custom-content a,
+.extra-widget a{
+    color: #A74111;
+}
+
+.mantanization-widget-menu-custom-content a:hover,
+.extra-widget a:hover{
+    color: #ccc;
+}
+
+.mantanizaation-widget-recent-posts-text a {
+    color: #313131;
+}
+/* === WIDGET === */
+
+
+/* === FOOTER === */
+.mantanization-footer-title .title-block{
+    border-bottom: 3px solid #ffd248;
+}
+
+.mantanization-footer-content .btn{
+    background: #F1D151;
+    color:#333;
+}
+
+.mantanization-footer-content .btn:hover{
+    background:#505050;
+}
+/* === FOOTER === */
+
+
+/* === POST === */
+.mantanization-post-title h2 a {
+    color: #4E4E4E
+}
+
+.mantanization-post-title h2 a:hover{
+    color: #D18C41;
+}
+
+.featured .ribbon{
+    background: #FFEB7E;
+    color: #333;
+}
+
+.mantanization-post-bottom a {
+    background: #FFEB7E;
+    border: 1px solid #FCDF68;
+    border-bottom: 0px;
+    color: #616161;
+    border-right: 0px;
+}
+
+.mantanization-post-bottom a:hover{
+    color:#fff;
+}
+
+.mantanization-post-bottom {
+    border-bottom: 1px solid #DADADA;
+}
+
+.img-hover-content a{
+    border: 2px solid #3d3d3d;
+    background: #3d3d3d;
+}
+
+.img-hover-content a:hover{
+    background:#FFD962;
+    border: 2px solid #FFD962;
+}
+
+.mantanization-widget-menu-content{
+    border-top:0px;
+}
+
+#mantanization-pagination .pagination a:hover{
+    background: #FFE767;
+    border: 1px solid #E9CA7A;
+    border-bottom: 2px solid #E7CA56;
+    color:#333;
+}
+
+blockquote {
+    border-left: #F7DB9F 5px solid;
+}
+
+.author-info a,
+.mantanization-post-detail-body a {
+    color: #CF9C4D;
+}
+/* === POST === */
+
+@media only screen and (max-width: 990px) {
+    #mantanization-widget-site-description {
+        background-image:none;
+    }
+}

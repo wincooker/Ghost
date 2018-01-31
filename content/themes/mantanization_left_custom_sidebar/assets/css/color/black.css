@@ -1,0 +1,125 @@
+::-moz-selection {
+    color: #FFF;
+    background: #777777;
+    text-shadow: none;
+}
+
+::selection {
+    color: #FFF;
+    background: #777777;
+    text-shadow: none;
+}
+
+ins{
+    color: #FFF;
+    background: #777777;
+    text-decoration:none;
+}
+
+/* === WIDGET === */
+#mantanization-widget-site-title{
+    background-image: none;
+    background-color:#fff;
+}
+
+#mantanization-widget-site-title a{
+    color: #536458;
+}
+
+#mantanization-widget-site-title a:hover{
+    color: #ccc;
+}
+
+#mantanization-widget-site-description{
+    background: #585858 url('../../img/img_bg_ribbon_shadow.png') no-repeat;
+}
+
+.mantanization-widget-menu-custom-title .title-block{
+    border-bottom: 2px solid #777;
+}
+
+.mantanization-widget-menu-custom {
+    border-bottom:3px solid #777;
+}
+
+.mantanization-widget-menu-custom-content a,
+.extra-widget a {
+    color: #13558F;
+}
+
+.mantanization-widget-menu-custom-content a:hover,
+.extra-widget a:hover{
+    color: #ccc;
+}
+
+.mantanizaation-widget-recent-posts-text a {
+    color: #313131;
+}
+/* === WIDGET === */
+
+
+/* === FOOTER === */
+.mantanization-footer-title .title-block{
+    border-bottom: 3px solid #797979;
+}
+
+.mantanization-footer-content .btn {
+    background: #535353;
+}
+
+.mantanization-footer-content .btn:hover{
+    background:#6B6B6B;
+}
+/* === FOOTER === */
+
+
+/* === POST === */
+.mantanization-post-title h2 a {
+    color: #4E4E4E
+}
+
+.mantanization-post-title h2 a:hover{
+    color: #ccc;
+}
+
+.featured .ribbon,
+.mantanization-post-bottom a {
+    background: #5C5C5C;
+}
+
+.mantanization-post-bottom {
+    border-bottom: 4px solid #5C5C5C;
+}
+
+.img-hover-content a{
+    background:#4D4D4D;
+    border: 2px solid #4D4D4D;
+}
+
+.img-hover-content a:hover{
+    background:#747474;
+    border: 2px solid #747474;
+}
+
+#mantanization-pagination .pagination a:hover{
+    background: #575757;
+    border: 1px solid #575757;
+    border-bottom: 2px solid #575757;
+}
+
+blockquote {
+    border-left: #999 5px solid;
+}
+
+.mantanization-disqus-body a,
+.author-info a,
+.mantanization-post-detail-body a{
+    color: #3574B8;
+}
+/* === POST === */
+
+@media only screen and (max-width: 990px) {
+    #mantanization-widget-site-description {
+        background-image:none;
+    }
+}

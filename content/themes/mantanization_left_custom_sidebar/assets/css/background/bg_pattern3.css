@@ -1,0 +1,8 @@
+body{
+    background-image: url('../../img/bg_pattern3.png');
+}
+
+.mantanization-widget-menu-content{
+    border: 1px solid #dfdfdf;
+    border-bottom: 2px solid #e0e0e0;
+}

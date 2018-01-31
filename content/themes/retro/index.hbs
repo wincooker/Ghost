@@ -1,0 +1,41 @@
+{{!< default}}
+
+    <header id="site-head">
+        <div class="vertical">
+            <div id="site-head-content" class="inner">
+                <h1 class="blog-title">Speak Code</h1>
+                <div class="star-split"></div>
+                <h2 style="margin-bottom: 20px;" class="blog-description">{{@blog.description}}</h2>
+				
+				<a href="https://twitter.com/joel_karr" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @joel_karr</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+    </header>
+
+
+<main class="content" role="main">
+
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <div class="inside">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+            </header>
+            <section class="post-excerpt">
+                {{content words="50"}}&hellip;
+                <a class="more" href="{{url}}">Read more</a>
+                <p class="post-tags">{{#if tags}}on {{tags}}{{/if}}</p>
+            </section>
+        </div>
+    </article>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+
+
+</main>

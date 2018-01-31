@@ -1,0 +1,41 @@
+{{!< default}}
+
+<div id="mantanization-index">
+    <div id="mantanization-main" role="main">
+
+        {{#foreach posts}}
+        <div class="mantanization-post {{post_class}}" itemscope itemtype="http://schema.org/Article">
+            <div class="mantanization-post-featured">{{content words="0"}}</div>
+            <div class="mantanization-post-content">
+                <div class="mantanization-post-title">
+                    <h2 itemprop="headline"><a href="{{url}}">{{title}}</a></h2>
+
+                    <div class="mantanization-post-info">
+                        <span itemprop="author"><i class="fa fa-user"></i> {{author.name}}</span> 
+                        <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+                            <i class="fa fa-clock-o"></i> {{date format='dddd, MMMM DD, YYYY'}}
+                        </time>
+                    </div>
+                </div>
+                <div class="mantanization-post-body"itemprop="articleBody">
+                    {{excerpt words="85"}} ...
+                </div>
+                <div class="mantanization-post-bottom">
+                    <div class="right">
+                        <a href="{{url}}"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        {{/foreach}}
+
+
+        {{#if pagination}}
+            <div id="mantanization-pagination">
+                {{pagination}}
+            </div>
+        {{/if}}
+
+    </div>
+</div>

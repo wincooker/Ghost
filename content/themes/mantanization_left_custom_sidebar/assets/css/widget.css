@@ -1,0 +1,297 @@
+/* 
+ * Theme Name: Mantanization
+ * Author: id-webmaster
+ * Code: widget.css
+ * Description: Widget Style for Mantanization Theme
+ * 
+ */
+ 
+ 
+/* ====== Mantanization Widget Menu ====== */
+.mantanization-widget-menu{
+    margin-bottom: 30px;
+}
+
+.mantanization-widget-menu-title{
+    position: relative;
+}
+
+.mantanization-widget-menu-title .left{
+    padding: 10px 18px;
+    font-size: 16px;
+}
+
+.mantanization-widget-menu-title .right a{
+    display: block;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 10px 18px;
+}
+
+.mantanization-widget-menu-content{
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    padding:15px 17px;
+    border:1px solid #dfdfdf;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.mantanization-widget-menu-content p{
+    margin:0;
+}
+
+.mantanization-widget-socialmedia{
+    margin-bottom: -1px;
+}
+
+.mantanization-widget-socialmedia ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 17px;
+}
+
+.mantanization-widget-socialmedia ul li{
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    width: 38px;
+    text-align: center;
+}
+
+.mantanization-widget-socialmedia ul li a i{
+    padding: 10px 0px;
+    background: #555;
+    color: #fff;
+    display: block;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: ease 0.3s;
+}
+
+.mantanization-widget-socialmedia ul li a i:hover{
+    background: #555;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .facebook-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-facebook:hover,
+.mantanization-widget-socialmedia .facebook-color,
+.mantanization-widget-socialmedia .fa-facebook{
+    background: #567ca4;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .twitter-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-twitter:hover,
+.mantanization-widget-socialmedia .twitter-color,
+.mantanization-widget-socialmedia .fa-twitter{
+    background: #49accd;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .google-plus-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-google-plus:hover,
+.mantanization-widget-socialmedia .google-plus-color,
+.mantanization-widget-socialmedia .fa-google-plus{
+    background: #eb7b7b;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .envelope-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-envelope:hover,
+.mantanization-widget-socialmedia .envelope-color,
+.mantanization-widget-socialmedia .fa-envelope{
+    background: #dfb36c;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .tumblr-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-tumblr:hover,
+.mantanization-widget-socialmedia .tumblr-color,
+.mantanization-widget-socialmedia .fa-tumblr{
+    background: #5ab68d;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .skype-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-skype:hover,
+.mantanization-widget-socialmedia .skype-color,
+.mantanization-widget-socialmedia .fa-skype{
+    background: #59c0d6;
+}
+
+
+.mantanization-footer-content .mantanization-widget-socialmedia .xing-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-xing:hover,
+.mantanization-widget-socialmedia .xing-color,
+.mantanization-widget-socialmedia .fa-xing{
+    background: #63ad8a;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .youtube-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-youtube:hover,
+.mantanization-widget-socialmedia .youtube-color,
+.mantanization-widget-socialmedia .fa-youtube{
+    background: #df7676;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .github-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-github:hover,
+.mantanization-widget-socialmedia .github-color,
+.mantanization-widget-socialmedia .fa-github{
+    background: #8f7599;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .linkedin-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-linkedin:hover,
+.mantanization-widget-socialmedia .linkedin-color,
+.mantanization-widget-socialmedia .fa-linkedin{
+    background: #659bc1;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .pinterest-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-pinterest:hover,
+.mantanization-widget-socialmedia .pinterest-color,
+.mantanization-widget-socialmedia .fa-pinterest{
+    background: #e67878;
+}
+
+.mantanization-footer-content .mantanization-widget-socialmedia .rss-color:hover, 
+.mantanization-footer-content .mantanization-widget-socialmedia .fa-rss:hover,
+.mantanization-widget-socialmedia .rss-color,
+.mantanization-widget-socialmedia .fa-rss{
+    background: #ef9c65;
+}
+
+.mantanization-widget-menu-shadow{
+    background: url('../img/img_bg_widget_menu_shadow2.png') no-repeat;
+    height:2px;
+}
+
+#mantanization-widget-recent-posts-wrapper{
+    margin-bottom:-6px;
+    margin-top:-1px;
+}
+
+.mantanization-widget-recent-posts{
+    margin-bottom:17px;
+    margin-left:-1px;
+    margin-top:3px;
+    margin-right:-17px;
+}
+
+.mantanization-widget-recent-posts-image{
+    margin-right: 10px;
+    margin-top:1px;
+    width:89px;
+}
+
+.mantanization-widget-recent-posts-image .mantanization-cover-img{
+    width: 79px;
+    height: 76px;
+    padding-top: 26px;
+    font-size: 25px;
+    color:#fff;
+}
+
+.mantanizaation-widget-recent-posts-text{
+    width:162px;
+}
+
+.mantanizaation-widget-recent-posts-text a{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.mantanizaation-widget-recent-posts-text a:hover{
+    color: #ccc;
+}
+
+.mantanizaation-widget-recent-posts-text p{
+    margin:2px 0px 0px;
+    font-size: 13px;
+    color: #444;
+}
+
+ul#flickr{
+    list-style: none;
+    margin: 0px -15px 0px 0px;
+    padding: 0px;
+}
+
+ul#flickr li img{
+    width: 100%;
+    height: 100%;
+}
+
+ul#flickr li img:hover{
+    opacity: 0.7;
+}
+
+ul#flickr li{
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    width: 60px;
+    height: 60px;
+}
+
+.mantanization-widget-menu-custom-content .fb-like-box.fb_iframe_widget span,
+.mantanization-widget-menu-custom-content .fb-like-box span iframe,
+.mantanization-widget-menu-content .fb-like-box.fb_iframe_widget span,
+.mantanization-widget-menu-content .fb-like-box span iframe{
+    width:100% !important;
+    height:240px;
+}
+
+.extra-widget{
+    margin-bottom: 2px;
+    margin-top: -2px;
+    color: #454545;
+    line-height: 22px;
+}
+
+.extra-widget iframe{
+    width:100% !important;
+}
+
+.mantanization-widget-menu-custom{
+    background: #fff;
+    border:1px solid #dfdfdf;
+    padding: 13px 18px 19px;
+    margin-bottom:30px;
+}
+
+.mantanization-widget-menu-custom-title{
+    border-bottom:2px solid #eee;
+    margin-bottom: 14px;
+    color: #222;
+    font-size:15px;
+}
+
+.mantanization-widget-menu-custom-title .title-block{
+    display: inline-block;
+    border-bottom: 2px solid #ffb566;
+    margin-bottom: -2px;
+    padding-bottom: 9px;
+    font-size: 16px;
+}
+
+.mantanization-widget-menu-custom-content {
+    color: #454545;
+    line-height: 21px;
+    padding-top: 6px;
+}
+/* ====== Mantanization Widget Menu ====== */
+
+/* ====== Another Setting ====== */
+.extra-widget ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+.extra-widget ul li{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 6px;
+	margin-bottom: 6px;
+}
+/* ====== Another Setting ====== */

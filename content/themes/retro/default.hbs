@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- Head Meta Data -->
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+    <!-- <link rel="author" href="https://plus.google.com/[YOUR PERSONAL G+ PROFILE HERE]"/> -->
+
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="{{meta_title}}"/>
+    <meta property="og:type" content="website"/>
+    {{#if @blog.logo}}<meta property="og:image" content="{{@blog.logo}}"/>{{/if}}
+
+    {{#if url}}<meta property="og:url" content="{{url}}"/>
+    {{else}}<meta property="og:url" content="{{@blog.url}}"/>{{/if}}
+
+    {{#if meta_description}}<meta name="og:description" content="{{meta_description}}">
+    {{else}}<meta name="og:description" content="{{@blog.description}}">{{/if}}
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary">
+
+    {{#if url}}<meta property="twitter:url" content="{{url}}"/>
+    {{else}}<meta property="twitter:url" content="{{@blog.url}}"/>{{/if}}
+
+    <meta name="twitter:title" content="{{meta_title}}">
+
+    {{#if @blog.logo}}<meta property="twitter:image" content="{{@blog.logo}}"/>{{/if}}
+
+    {{#if meta_description}}<meta name="twitter:description" content="{{meta_description}}">
+    {{else}}<meta name="twitter:description" content="{{@blog.description}}">{{/if}}
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57134004-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Head Stylesheets & Scripts -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css' />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    {{{body}}}
+    <footer class="site-footer">
+        <div class="inner">
+            <a class="subscribe" href="{{@blog.url}}/rss/"><i class="icon-feed"></i><b>RSS FEED</b><span>Subscribe to news</span></a>
+            <section class="copyright">All content copyright <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; 2014-2015 &bull; All rights reserved.</section>
+            <section class="poweredby">Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a> &amp;</a></section>
+        </div>
+    </footer>
+
+    {{ghost_foot}}
+    <script src="/assets/js/index.js"></script>
+
+</body>
+</html>

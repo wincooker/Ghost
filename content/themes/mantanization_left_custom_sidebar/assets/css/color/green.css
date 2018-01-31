@@ -1,0 +1,126 @@
+::-moz-selection {
+    color: #FFF;
+    background: #5BC97E;
+    text-shadow: none;
+}
+
+::selection {
+    color: #FFF;
+    background: #5BC97E;
+    text-shadow: none;
+}
+
+ins{
+    color: #FFF;
+    background: #5BC97E;
+    text-decoration:none;
+}
+
+/* === WIDGET === */
+#mantanization-widget-site-title{
+    background-image: none;
+    background-color:#fff;
+}
+
+#mantanization-widget-site-title a{
+    color: #536458;
+}
+
+#mantanization-widget-site-title a:hover{
+    color: #ccc;
+}
+
+#mantanization-widget-site-description{
+    background: #4BB679 url('../../img/img_bg_ribbon_shadow.png') no-repeat;
+}
+
+.mantanization-widget-menu-title .right a{
+    background: #27ca82;
+}
+
+.mantanization-widget-menu-custom-title .title-block{
+    border-bottom: 2px solid #71CA97;
+}
+
+.mantanization-widget-menu-custom {
+    border-bottom:3px solid #54CC88
+}
+
+.mantanization-widget-menu-custom-content a,
+.extra-widget a {
+    color: #1F9654;
+}
+
+.mantanization-widget-menu-custom-content a:hover,
+.extra-widget a:hover{
+    color: #ccc;
+}
+
+.mantanizaation-widget-recent-posts-text a {
+    color: #313131;
+}
+/* === WIDGET === */
+
+/* === FOOTER === */
+.mantanization-footer-title .title-block{
+    border-bottom: 3px solid #5CE677;
+}
+
+.mantanization-footer-content .btn{
+    background: #3ABE5F;
+}
+
+.mantanization-footer-content .btn:hover{
+    background:#505050;
+}
+/* === FOOTER === */
+
+/* === POST === */
+.mantanization-post-title h2 a {
+    color: #4E4E4E
+}
+
+.mantanization-post-title h2 a:hover{
+    color: #57A567;
+}
+
+.featured .ribbon,
+.mantanization-post-bottom a {
+    background: #5FCE7E;
+}
+
+.mantanization-post-bottom {
+    border-bottom: 4px solid #5FCE7E;
+}
+
+.img-hover-content a{
+    border: 2px solid #5FCA79;
+    background: #5FCA79;
+}
+
+.img-hover-content a:hover{
+    background:#4D4D4D;
+    border: 2px solid #4D4D4D;
+}
+
+#mantanization-pagination .pagination a:hover{
+    background: #61D581;
+    border: 1px solid #61D581;
+    border-bottom: 2px solid #61D581;
+}
+
+blockquote {
+    border-left: #69C49C 5px solid;
+}
+
+.author-info a,
+.mantanization-post-detail-body a{
+    color: #2CA357;
+}
+/* === POST === */
+
+@media only screen and (max-width: 990px) {
+    #mantanization-widget-site-description {
+        background-image:none;
+    }
+}

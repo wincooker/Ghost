@@ -1,0 +1,41 @@
+{{!< default}}
+
+{{! The post content area }}
+<div id="mantanization-index">
+    <div id="mantanization-main" role="main">
+
+        {{#post}}
+            <div class="mantanization-post-detail {{post_class}}">
+                <div class="mantanization-post-featured"></div>
+                <div class="mantanization-post-detail-content" itemscope itemtype="http://schema.org/Article">
+                    <div class="mantanization-post-title">
+                        <h2 itemprop="headline">{{title}}</h2>
+
+                        <div class="mantanization-post-info">
+                            <span itemprop="author"><i class="fa fa-user"></i> {{author.name}}</span> 
+                            <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+                                <i class="fa fa-clock-o"></i> {{date format='dddd, MMMM DD, YYYY'}}
+                            </time>
+                        </div>
+                    </div>
+                    <div class="mantanization-post-detail-body" itemprop="articleBody">
+                        {{content}}
+                    </div>
+                    <div class="mantanization-post-detail-sharing">
+                        {{> sharethis}}
+                    </div>
+
+                    {{#if tags}}
+                        <div class="mantanization-post-detail-tag">
+                            <i class="fa fa-tag"></i> {{tags separator=", "}}
+                        </div>
+                    {{/if}}
+
+                    <div class="mantanization-post-bottom"></div>
+                </div>
+            </div>
+
+        {{/post}}
+
+    </div>
+</div>

@@ -1,0 +1,29 @@
+[31m
+ERROR:[39m [31mcannot get fulfillment value of a non-fulfilled promise[39m 
+ [37mChecking for updates failed, your blog will continue to function.[39m 
+ [32mIf you get this error repeatedly, please seek help from https://ghost.org/forum.[39m 
+ TypeError: cannot get fulfillment value of a non-fulfilled promise
+    at PromiseInspection.Promise$value [as value] (D:\home\site\wwwroot\node_modules\bluebird\js\main\synchronous_inspection.js:56:15)
+    at D:\home\site\wwwroot\core\server\update-check.js:87:47
+    at tryCatch1 (D:\home\site\wwwroot\node_modules\bluebird\js\main\util.js:43:21)
+    at Promise$_callHandler [as _callHandler] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:649:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:663:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:826:14)
+    at Promise$_settlePromises [as _settlePromises] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:960:14)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (D:\home\site\wwwroot\node_modules\bluebird\js\main\async.js:75:12)
+    at Async$consumeFunctionBuffer (D:\home\site\wwwroot\node_modules\bluebird\js\main\async.js:38:14)
+    at process._tickDomainCallback (node.js:492:13) 
+[31m
+ERROR:[39m [31mCannot read property 'length' of undefined[39m 
+ [37mChecking for updates failed, your blog will continue to function.[39m 
+ [32mIf you get this error repeatedly, please seek help from https://ghost.org/forum.[39m 
+ TypeError: Cannot read property 'length' of undefined
+    at D:\home\site\wwwroot\core\server\update-check.js:112:38
+    at tryCatch1 (D:\home\site\wwwroot\node_modules\bluebird\js\main\util.js:43:21)
+    at Promise$_callHandler [as _callHandler] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:649:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:663:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:826:14)
+    at Promise$_settlePromises [as _settlePromises] (D:\home\site\wwwroot\node_modules\bluebird\js\main\promise.js:960:14)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (D:\home\site\wwwroot\node_modules\bluebird\js\main\async.js:75:12)
+    at Async$consumeFunctionBuffer (D:\home\site\wwwroot\node_modules\bluebird\js\main\async.js:38:14)
+    at process._tickDomainCallback (node.js:492:13) 

@@ -1,0 +1,16 @@
+body{
+    background-image: url('../../img/bg_pattern5.png');
+}
+
+.mantanization-widget-menu-content {
+    border: 1px solid #D3D3D3;
+    border-bottom: 2px solid #D3D3D3;
+}
+
+#mantanization-pagination .pagination span, 
+#mantanization-pagination .pagination a,
+.mantanization-disqus,
+.mantanization-post-detail-content, 
+.mantanization-post-content {
+    border: 1px solid #d3d3d3;
+}

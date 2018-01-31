@@ -1,0 +1,102 @@
+{{!< default}}
+
+{{! The post content area }}
+<div id="mantanization-index">
+    <div id="mantanization-main" role="main">
+
+        {{#post}}
+            <div class="mantanization-post-detail {{post_class}}">
+                <div class="mantanization-post-featured"></div>
+                <div class="mantanization-post-detail-content" itemscope itemtype="http://schema.org/Article">
+                    <div class="mantanization-post-title">
+                        <h2 itemprop="headline">{{title}}</h2>
+
+                        <div class="mantanization-post-info">
+                            <span itemprop="author"><i class="fa fa-user"></i> {{author.name}}</span> 
+                            <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+                                <i class="fa fa-clock-o"></i> {{date format='dddd, MMMM DD, YYYY'}}
+                            </time>
+                        </div>
+                    </div>
+                    <div class="mantanization-post-detail-body" itemprop="articleBody">
+                        {{content}}
+                    </div>
+                    <div class="mantanization-post-detail-sharing">
+                        {{> sharethis}}
+                    </div>
+
+                    {{#if tags}}
+                        <div class="mantanization-post-detail-tag">
+                            <i class="fa fa-tag"></i> {{tags separator=", "}}
+                        </div>
+                    {{/if}}
+
+                    <div class="mantanization-post-bottom"></div>
+                </div>
+            </div>
+
+            {{! Author Profile }}
+            <div id="mantanization-author">
+                {{#if author}}
+                    <div class="mantanization-post-detail-author" itemscope itemtype="http://schema.org/Person">
+                        <div id="mantanization-author-cover"{{#if author.cover}} style="background-image:url('{{author.cover}}');"{{/if}}>
+                            {{#if author.image}}
+                                <div id="mantanization-author-cover-content">
+                                    <div class="mantanization-cover-figure">
+                                        <div class="mantanization-cover-img" style="background-image:url('{{author.image}}');">
+                                            <span class="hidden">{{author.name}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/if}}
+                        </div>
+
+                        <div id="mantanization-author-border">
+                            <div class="author-title" itemprop="name">{{author.name}}</div>
+
+                            <div class="author-info">
+                                <ul>
+                                    {{#if author.website}}
+                                        <li>
+                                            <i class="fa fa-globe"></i> <span itemprop="url"><a href="{{author.website}}">{{author.website}}</a></span>
+                                        </li>
+                                    {{/if}}
+
+                                    {{#if author.email}}
+                                        <li>
+                                            <i class="fa fa-envelope-o"></i> <span itemprop="email"><a href="mailto:{{author.email}}">{{author.email}}</a></span>
+                                        </li>
+                                    {{/if}}
+
+                                    {{#if author.location}}
+                                        <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                            <i class="fa fa-map-marker"></i> <span itemprop="streetAddress">{{author.location}}</span>
+                                        </li>
+                                    {{/if}}
+
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+
+                            {{#if author.bio}}
+                                <div class="author-description" itemprop="description">{{author.bio}}</div>
+                            {{/if}}
+
+                            <div class="mantanization-post-bottom"></div>
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+
+            {{! Disqus}}
+            <div class="mantanization-disqus">
+                <div class="mantanization-disqus-body">
+                    <div id="disqus_thread"></div>
+                    {{> disqus}}
+                </div>
+                <div class="mantanization-post-bottom"></div>
+            </div>
+        {{/post}}
+
+    </div>
+</div>

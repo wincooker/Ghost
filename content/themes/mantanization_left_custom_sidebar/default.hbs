@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href={{asset "bootstrap/css/bootstrap.css"}}" />
+    <link rel="stylesheet" type="text/css" href={{asset "fontawesome/css/font-awesome.min.css"}}" /> 
+    <link rel="stylesheet" type="text/css" href={{asset "magnific-popup/magnific-popup.css"}}" /> 
+    <link rel="stylesheet" type="text/css" href={{asset "css/style.css"}}" />
+    <link rel="stylesheet" type="text/css" href={{asset "css/reset.css"}}" />
+    <link rel="stylesheet" type="text/css" href={{asset "css/widget.css"}}" />
+    <link rel="stylesheet" type="text/css" href={{asset "css/post.css"}}" />
+    <link rel="stylesheet" type="text/css" href={{asset "css/switcher.css"}}" />
+
+    {{! Alternate Style }}
+    <link rel="stylesheet" type="text/css" href={{asset "css/color/default.css"}}" title="default" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/green.css"}}" title="green" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/blue.css"}}" title="blue" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/red.css"}}" title="red" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/purple.css"}}" title="purple" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/black.css"}}" title="black" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/orange.css"}}" title="orange" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/maroon.css"}}" title="maroon" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/yellow.css"}}" title="yellow" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" href={{asset "css/color/blue-ocean.css"}}" title="blue-ocean" />
+    
+    {{! Background Style }}
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_default.css"}}" title="bg_default" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern1.css"}}" title="bg_pattern1" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern2.css"}}" title="bg_pattern2" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern3.css"}}" title="bg_pattern3" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern4.css"}}" title="bg_pattern4" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern5.css"}}" title="bg_pattern5" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern6.css"}}" title="bg_pattern6" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern7.css"}}" title="bg_pattern7" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern8.css"}}" title="bg_pattern8" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/bg_pattern9.css"}}" title="bg_pattern9" />
+    <link rel="background stylesheet" type="text/css" media="screen" href={{asset "css/background/nopattern.css"}}" title="nopattern" />
+
+    {{! Background Style }}
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_default.css"}}" title="bg_header_default" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_green.css"}}" title="bg_header_green" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_blue.css"}}" title="bg_header_blue" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_red.css"}}" title="bg_header_red" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_purple.css"}}" title="bg_header_purple" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_maroon.css"}}" title="bg_header_maroon" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_orange.css"}}" title="bg_header_orange" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_blue_ocean.css"}}" title="bg_header_blue_ocean" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_green_light.css"}}" title="bg_header_green_light" />
+    <link rel="external stylesheet" type="text/css" media="screen" href={{asset "css/background_header/bg_header_yellow.css"}}" title="bg_header_yellow" />
+    
+
+    {{! Google Fonts }}
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+    
+    {{! JavaScript }}
+    <script type="text/javascript" src={{asset "js/config.js"}}"></script>
+    
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src={{asset "js/html5shiv.js"}}"></script>
+        <script type="text/javascript" src={{asset "js/respond.min.js"}}"></script>
+    <![endif]-->
+    
+    <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=386043438147984";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    <div id="fb-root"></div>
+
+    {{! Mantanization Wrapper }}
+    <div id="mantanization-wrapper">
+         
+        {{! Mantanization Body }}
+        <div id="mantanization-body">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div id="mantanization-widget">
+                            <div id="mantanization-widget-site">
+                                <div id="mantanization-widget-site-image" {{#if @blog.cover}} style="background-image:url('{{@blog.cover}}');"{{/if}}>
+                                    {{#if @blog.logo}}
+                                        <div id="mantanization-logo">
+                                            <div class="mantanization-cover-figure">
+                                                <div class="mantanization-cover-img" style="background-image:url('{{@blog.logo}}')">
+                                                    <span class="hidden">{{@blog.title}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/if}}
+                                </div>
+                                <div id="mantanization-widget-site-title">
+                                    <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+                                </div>
+                                <div id="mantanization-widget-site-description">
+                                    {{@blog.description}}
+                                </div>
+                            </div>
+                            
+                            {{> widget}}
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        {{! Everything else gets inserted here }}
+                        {{{body}}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        {{> footer}}
+    </div>
+
+    {{> styleswitcher}}
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file }}
+    <script type="text/javascript" src={{asset "bootstrap/js/bootstrap.min.js"}}"></script>
+    <script type="text/javascript" src={{asset "js/fitvids.js"}}"></script>
+    <script type="text/javascript" src={{asset "js/jflickrfeed.min.js"}}"></script>
+    <script type="text/javascript" src={{asset "js/parserss-jquery.js"}}"></script>
+    <script type="text/javascript" src={{asset "js/sugar-date-1.3.9.min.js"}}"></script>
+    <script type="text/javascript" src={{asset "magnific-popup/jquery.magnific-popup.min.js"}}"></script>
+    <script type="text/javascript" src={{asset "js/switcher.js"}}"></script>
+    
+    <script type="text/javascript">
+        var rssInit = "{{@blog.url}}/rss/";
+    </script>
+    
+    <script type="text/javascript" src={{asset "js/index.js"}}"></script>
+</body>
+</html>

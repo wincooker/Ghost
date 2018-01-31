@@ -1,0 +1,27 @@
+body{
+    background-image: url('../../img/bg_pattern9.png');
+}
+
+.mantanization-widget-menu-custom{
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+}
+
+#mantanization-author-border,
+.mantanization-disqus,
+.mantanization-post-detail-content,
+.mantanization-post-content {
+    border: 0px solid #dfdfdf;
+}
+
+#mantanization-pagination .pagination span, 
+#mantanization-pagination .pagination a {
+    border: 0px;
+    border-bottom: 1px solid #B9B9B9;
+}
+
+#mantanization-pagination .pagination a:hover{
+    border: 0px;
+    border-bottom: 1px solid #B9B9B9;
+}
